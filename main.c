@@ -6,8 +6,6 @@
 
 int main(void) 
 {
-	int max_x, max_y;
-
 	initscr(); 
 	clear(); 
 	noecho(); 
@@ -18,8 +16,11 @@ int main(void)
 	nodelay(stdscr, TRUE);
 	start_color(); 
 
+   int max_x, max_y;
 	getmaxyx(stdscr, max_y, max_x);
 
 	WINDOW *janela_principal;
-	janela_principal = cria_janela(max_y, max_x, 0, 10);	
+	janela_principal = cria_janela(max_y, max_x, 0, 0);	
+
+   SNAKE* snake = inicializa(10, 10);
 }

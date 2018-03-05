@@ -7,7 +7,7 @@
 //: define estrutura da cobra
 typedef struct snake {
 	int tamanho;
-	NO* cabeca;
+	CORPO* cabeca;
 }SNAKE;
 
 //: faz a snake andar uma posição
